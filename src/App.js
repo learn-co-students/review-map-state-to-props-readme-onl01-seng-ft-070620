@@ -32,10 +32,10 @@ class App extends Component {
     );
   }
 }
-
+// argument passed here will represent the store's state
 const mapStateToProps = (state) => {
-  debugger;
   return { items: state.items }
 }
-
+// function passed here will be executed ea time state changes
+// basically passing the return value of 1st function to 2nd function
 export default connect(mapStateToProps)(App);
